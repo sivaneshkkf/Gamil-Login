@@ -1,0 +1,245 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color: #077fcc;
+	background-image: linear-gradient(90deg, #077fcc 0%, #0364a5 23%, #023c5a 100%);
+}
+
+
+main{
+	width: 900px;
+	margin: 5% auto 10px auto;
+	box-shadow: 8px 8px 20px rgba(0,0,0,0.8),
+				8px 8px 25px rgba(0,0,0,0.8);
+	border-radius: 20px;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 50px;
+}
+form{
+	width: 600px;
+	padding:20px 0 20px 20px;
+}
+
+.heading{
+	font-size:30px;
+	text-align: center;
+}
+
+
+
+
+/*input Name & Password & Gmail*/
+
+form input{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	border:0.01px solid rgba(0,0,0,0.1);;
+	background-color: whitesmoke;
+	font-size: 15px;
+}
+form .name, form .pass, form .gmail{
+	display: block;
+	margin-top: 40px;
+	position: relative;
+}
+
+form input[type="checkbox"]{
+	width: 18px;
+	height: 18px;
+}
+
+form span{
+	color: darkslategray;
+	font-size: 14px;
+	display: block;
+	margin:5px;
+}
+
+
+/*show password*/
+.iconshow i{
+	color: gray;
+	position: absolute;
+	font-size: 25px;
+	bottom: 0;
+	right: -30px;
+}
+
+
+/*Button*/
+
+form button{
+	padding: 5px 20px;
+	background-color: royalblue;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.nextbutton{
+	margin-top: 40px;
+	text-align: center;
+}
+
+
+
+
+/*input Label*/
+
+form label{
+	font-size: 16px;
+	color: darkslategray;
+
+}
+form small{
+	position:absolute;
+	right: 25px;
+	top:10px;
+	font-size: 18px;
+}
+
+.d-flex{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	position: relative;
+}
+
+
+
+
+/*Image*/
+
+form img{
+	width: 100px;
+}
+
+
+/* Relative & absolute */
+
+form .name label, form .pass label, form .gmail label{
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	cursor: text;
+}
+
+#passspan1{
+	position: absolute;
+	top: 80px;
+}
+
+
+
+/*hover effect*/
+
+form input, form label{
+	transition:all 0.2s;
+}
+
+.name, .gmail, .pass{
+	width: 100%;
+	position: relative;
+}
+input:focus{
+	border: 1px solid royalblue;
+}
+ input:valid ~ label,
+ input:focus ~ label{
+ 	font-size: 14px;
+ 	background-color: white;
+ 	padding: 0 5px;
+	top: -10px;
+	color: royalblue;
+}
+
+/*Login*/
+
+.login{
+	width: 600px;
+	padding: 20px;
+	min-height: 580px;
+	max-height: 700px;
+	text-align: center;
+	background-image:linear-gradient(90deg,#0364a5 23%, #023c5a 100%);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.login p{
+	font-size: 14px;
+}
+.login button{
+	border: none;
+	padding: 8px 15px;
+	background-color: royalblue;
+	margin-top: 10px;
+	color: white;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.login button a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+.details{
+	width: 900px;
+	margin:auto;
+}
+.details a{
+	color: white;
+	font-size: 16px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+.details a:hover{
+	font-weight: bold;
+}
+
+
+/*Error Msg*/
+.error span, i{
+	color: red;
+	font-size: 15px;
+}
+.name ~.error{
+	position: absolute;
+	top: 80px;
+}
+
+form i{
+	margin-right: 5px;
+}
+.gmail .error{
+	position: absolute;
+	top: 40px;
+}
+.pass ~ .error{
+	position: absolute;
+	top: 90px;
+}
+
+.errorMsg{
+	position: absolute;
+	top: 90px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gmail Sign In</title>
+</head>
+<body>
+<main>
+	<form name="signin">
+	<div class="heading">
+		<img src="images/profile2.png">
+		<p>Creat your Account</p>
+	</div>
+	<div class="d-flex" id="firstnameDiv">
+		<div class="name">
+			<input type="text" name="firstname" id="firstname" required>
+			<label for="firstname">First Name</label>
+		</div>
+		<div class="name">
+			<input type="text" name="lastname" id="lastname" required>
+			<label for="lastname">Last Name</label>
+		</div>
+		<div  class="error" id="namespan1" hidden>
+			<span id="nameError"><i class="bi bi-exclamation-circle-fill"></i>Enter first and last names</span>
+		</div>
+		<div  class="error" id="namespan2" hidden>
+			<span id="nameError"><i class="bi bi-exclamation-circle-fill"></i>Name already exist</span>
+		</div>
+	</div>
+	
+	<div class="gmail">
+		
+		<input type="gmail" name="gmail" id="gmail" required>
+		<label for=gmail>Gmail</label>
+		<div class="gmailspan" id="gmailspan1">
+			<span>You can use letters, numbers & periods</span></div>
+		<small>@gmail</small>
+		<div  class="error" id="gmailspan2" hidden>
+			<span id="gmailError"><i class="bi bi-exclamation-circle-fill"></i>Choose a gmail address</span>
+		</div>
+		<div  class="error" id="gmailspan3" hidden>
+			<span id="nameError"><i class="bi bi-exclamation-circle-fill"></i>Gmail ID already exist</span>
+		</div>	
+	</div>
+	<div class="d-flex">
+		<div class="pass">
+		
+			<input type="password" name="password" id="password" required>
+			<label for="password">Password</label>
+		</div>
+		
+		<div class="pass">
+			<input type="password" name="confirm" id="confirm" required>
+			<label for="confirm">confirm</label>
+		</div>
+		<div class="passspan" id="passspan1">
+			<span>Use 8 or more characters</span></div>
+		
+		<div  class="error" id="passspan2" hidden>
+			<span id="passworderror"><i class="bi bi-exclamation-circle-fill"></i>Enter a password</span>
+		</div>
+		<div  class="error" id="passspan3" hidden>
+			<span id="nameError"><i class="bi bi-exclamation-circle-fill"></i>Password and confirm password must be same</span>
+		</div>
+		<div class="iconshow">
+			<i class="bi bi-eye-fill"></i>
+		</div>
+	</div>
+	
+		
+	<div class="nextbutton">
+		<button id="nextbutton" type="submit">Next</button>
+	</div>
+	</form>
+	<div class="login">
+		<div class="heading">
+			<h4>Welcome to Signin</h4>
+			<p>Already have an account please</p>
+		</div>
+		<div>
+			<button><a href="login.html">Login</a></button>
+		</div>
+
+	</div>
+</main>
+<div class="details">
+	<a href="next.html" target="blank">Your Details</a>
+</div>
+<script type="text/javascript" src="Assets/js/javascript1.js"></script>
+</body>
+</html>
